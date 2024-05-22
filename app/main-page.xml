@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="My App" icon="" />
+    <StackLayout class="p-4">
+        <Label text="Введіть a:" class="text-3xl text-center" />
+        <TextField id="InputA" keyboardType="number" text="{{ inputA }}" />
+        
+        <Label text="Введіть b:" class="text-3xl text-center" />
+        <TextField id="InputB" keyboardType="number" text="{{ inputB }}" />
+
+        <Button text="Обчислити добуток" tap="onCalculateButtonTapTask1" class="-primary" />
+        <Label id="resultLabelTask1" text="{{ resultLabelTask1 }}" />
+
+        <Label text="Введіть перше число:" class="text-3xl text-center" />
+        <TextField id="InputX" keyboardType="number" text="{{ inputX }}" />
+        
+        <Label text="Введіть друге число:" class="text-3xl text-center" />
+        <TextField id="InputY" keyboardType="number" text="{{ inputY }}" />
+
+        <Label text="Введіть третє число:" class="text-3xl text-center" />
+        <TextField id="InputZ" keyboardType="number" text="{{ inputZ }}" />
+
+        <Button text="Обчислити" tap="onCalculateButtonTapTask2" class="-primary" />
+        <Label id="resultLabelTask2" text="{{ resultLabelTask2 }}" />
+    </StackLayout>
+</Page>
